@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hematology Education</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+		
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">This is Massively</a></li>
+							<li class="active"><a href="generic.html">Generic Page</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Hematology Education<br />
+									</h1>
+									
+								</header>
+
+								<div class="slideshow-container">
+
+								<div class="mySlides fade">
+								  <div class="numbertext">1 / 5</div>
+								  <img src="images/hemescreensix.png" style="width:100%">
+								  
+								</div>
+
+								<div class="mySlides fade">
+								  <div class="numbertext">2 / 5</div>
+								  <img src="images/heme_education_two.png" style="width:100%">
+								  <
+								</div>
+
+								<div class="mySlides fade">
+								  <div class="numbertext">3 / 5</div>
+								  <img src="images/heme_education_three.png" style="width:100%">
+								  <
+								</div>								
+
+
+								<div class="mySlides fade">
+								  <div class="numbertext">4 / 5</div>
+								  <img src="images/heme_education_four.png" style="width:100%">
+								  <
+								</div>
+
+							
+								<a class="prev" onclick="plusSlides(-1)">❮</a>
+								<a class="next" onclick="plusSlides(1)">❯</a>
+
+								</div>
+								<br>
+
+								<div style="text-align:center">
+								  <span class="dot" onclick="currentSlide(1)"></span> 
+								  <span class="dot" onclick="currentSlide(2)"></span> 
+								  <span class="dot" onclick="currentSlide(3)"></span> 
+								  <span class="dot" onclick="currentSlide(4)"></span>
+								</div>
+
+								<div class="image main">
+									
+								</div>
+								<p>
+								This application was designed to provide the laboratory professional with resources to excel in hematology.  Performing differentials can be a difficult task due to the variablity of how cells look in different populations.  I developed a reference cell function that allows for a organization to build custom cell reference guides based on the paitents they encounter everyday.  Pictures of cells can be uploaded to the application and saved in a database to be referenced later by the Technologist.  Hematology Education offers an interactive hematopoiesis function that takes the user through hematopoiesis and provides information for each cell along the way.  This application also offers personalized quizzes that can be made from the reference cell database.
+								</p>
+								<p></p>
+								<ul class="actions special">
+									
+								</ul>
+									
+								<br>							
+								<a href="./index.html">Back To Homepage</a>
+								
+					
+
+							</section>
+
+					</div>
+
+			
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+
+	<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+</html>
+
